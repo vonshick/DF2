@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
         val notification = Notification.Builder(this@MainActivity, "com.example.PhoneProperties")
             .setChannelId("com.example.PhoneProperties")
             .setContentTitle("App went to the background")
-            .setSmallIcon(android.R.drawable.ic_dialog_dialer)
+            .setSmallIcon(android.R.drawable.ic_dialog_email)
             .setAutoCancel(true)
         val notificationIntent = Intent(this, MainActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT)
